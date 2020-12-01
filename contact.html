@@ -10,10 +10,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/82bb699038.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin-top: 75px;
+    }
+
+    .bg-img {
+      background-image: url(/Images/photo-1522143049013-2519756a52d4.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .py-6 {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+
+    @media only screen and (min-width: 992px) {
+      .py-6 {
+        padding-top: 128px;
+        padding-bottom: 128px;
+      }
     }
 
     .icon {
@@ -23,19 +40,18 @@
 </head>
 
 <body>
-
   <header>
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm fixed-top py-3">
-  
+
       <a class="navbar-brand" href="#">
         <img src="/Images/logo.svg" alt="Brand">
       </a>
-  
-  
+
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <form action="#">
           <input class="form-control my-4 my-lg-0" type="text" placeholder="Search">
@@ -69,140 +85,101 @@
 
   <main>
 
-    <section class="container-bar d-flex align-items-center">
-      <div class="container">
-        <p class="text-white">THE BEST HOLIDAY EXPERIENCE</p>
-        <h1 class="text-white font-weight-bold display-3 mb-5">Stay like a local</h1>
-        <form action="#">
-          <div class="row">
-            <div class="col-lg-3 mb-3 mb-lg-0">
-              <input type="text" class="form-control" placeholder="What are you searching for?">
-            </div>
-            <div class="col-lg-3 mb-3 mb-lg-0">
-              <input type="text" class="form-control" placeholder="Location">
-            </div>
-            <div class="col-lg-3 mb-3 mb-lg-0">
-              <select class="custom-select" id="">
-                <option selected value="">Categories</option>
-                <option value="">Restaurants</option>
-                <option value="">Hotels</option>
-                <option value="">Cafes</option>
-              </select>
-            </div>
-            <div class="col-lg-3 mb-3 mb-lg-0">
-              <button class="btn btn-primary font-weight-bold" type="submit">SEARCH</button>
-            </div>
-          </div>
-        </form>
+    <section>
+      <div class="container-fluid bg-img py-6 py-lg-7">
+        <div class="text-center">
+          <ul class="nav d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <h1 class="font-weight-bold text-white">How can wee help you today?</h1>
+        </div>
       </div>
     </section>
 
-    <section class="bg-light py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <p class="text-uppercase font-weight-bold text-muted">one-of-a-kind vacation rentals</p>
-          <h2 class="font-weight-bold">Booking with us is easy</h2>
-        </div>
+    <section>
+      <div class="container py-5">
         <div class="row">
-          <div class="col-lg-4 text-center mb-3 mb-lg-0">
-            <div class="mb-2">
-              <span class="text-primary"><i class="fas fa-map-marker-alt icon"></i></span>
-            </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="text-primary icon mb-2"><i class="fas fa-map-marker-alt"></i></div>
             <div>
-              <h3>Find the perfect rental</h3>
-              <p class="text-muted">One morning, when Gregor Samsa woke from troubled dreams, he found himself
-                transformed in his bed in</p>
+              <h4 class="font-weight-bold">Address</h4>
+              <p class="text-muted">13/25 New Avenue New Heaven, 45Y 73J England, <strong>Great Britain</strong></p>
             </div>
           </div>
-          <div class="col-lg-4 text-center mb-3 mb-lg-0">
-            <div class="mb-2">
-              <span class="text-primary"><i class="far fa-credit-card icon"></i></span>
-            </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="text-primary icon mb-2"><i class="fas fa-tty"></i></div>
             <div>
-              <h3>Find the perfect rental</h3>
-              <p class="text-muted">One morning, when Gregor Samsa woke from troubled dreams, he found himself
-                transformed in his bed in</p>
+              <h4 class="font-weight-bold">Call center</h4>
+              <p class="text-muted">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-muted"><strong>+33 555 444 333</strong></p>
             </div>
           </div>
-          <div class="col-lg-4 text-center mb-3 mb-lg-0">
-            <div class="mb-2">
-              <span class="text-primary"><i class="far fa-heart icon"></i></i></span>
-            </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="text-primary icon mb-2"><i class="fas fa-envelope"></i></div>
             <div>
-              <h3>Find the perfect rental</h3>
-              <p class="text-muted">One morning, when Gregor Samsa woke from troubled dreams, he found himself
-                transformed in his bed in</p>
+              <h4 class="font-weight-bold">Electronic support</h4>
+              <p class="text-muted">Please feel free to write an email to us or to use our electronic ticketing system.</p>
+              <ul class="list-unstyled text-muted">
+                <li>info@sell.com</li>
+                <li>support@sell.com</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container-getstart d-flex align-items-center">
-      <div class="container">
-        <h3 class="text-white display-3 mb-5">Ready for your next holidays?</h3>
-        <div>
-          <button class="btn btn-light font-weight-bold" type="button">GET START</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5">
-
-      <div class="container">
-
-        <div class="row mb-4">
-          <div class="col-lg-8">
-            <p class="text-uppercase">stories from around the globe</p>
-            <h2 class="font-weight-bold">From our travel blog</h2>
-          </div>
-          <div class="col-lg-4 d-lg-flex justify-content-end">
-            <a class="text-muted" href="#">See all articles</a>
-          </div>
-        </div>
-
+    <section class="bg-light">
+      <div class="container py-5">
+        <h2 class="font-weight-bold mb-5">Contact form</h2>
         <div class="row">
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="card shadow">
-              <img class="card-img-top" src="/Images/photo-1512917774080-9991f1c4c750.jpg" alt="" style="width: 100%;">
-              <div class="card-body">
-                <a class="text-uppercase text-muted" href="#">travel</a>
-                <h4 class="card-title"><a class="text-dark" href="#">Autumn fashion tips and tricks</a></h4>
-                <p class="text-muted"><i class="far fa-clock"></i> January 16, 2016</p>
-                <p class="text-muted">Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, feugiat
-                  vitae, ultricies ege...</p>
-                <a class="text-uppercase" href="#">read more</a>
+          <div class="col-md-7 mb-4 mb-md-0">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="first-name">YOUR FIRSTNAME *</label>
+                    <input class="form-control" type="text" name="firstname" id="first-name" placeholder="Enter your first name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="last-name">YOUR LASTNAME *</label>
+                    <input class="form-control" type="text" name="lastname" id="last-name" placeholder="Enter your last name">
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="form-group">
+                <label for="email">YOUR EMAIL *</label>
+                <input class="form-control" type="email" placeholder="Enter your email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="comment">Comment:</label>
+                  <textarea class="form-control" name="comment" id="comment" cols="30" rows="4" placeholder="Enter your message"></textarea>
+              </div>
+              <button class="btn btn-outline-primary" type="submit">SEND MESSAGE</button>
+            </form>
           </div>
 
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="card shadow">
-              <img class="card-img-top" src="/Images/photo-1512917774080-9991f1c4c750.jpg" alt="" style="width: 100%;">
-              <div class="card-body">
-                <a class="text-uppercase text-muted" href="#">travel</a>
-                <h4 class="card-title"><a class="text-dark" href="#">Autumn fashion tips and tricks</a></h4>
-                <p class="text-muted"><i class="far fa-clock"></i> January 16, 2016</p>
-                <p class="text-muted">Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, feugiat
-                  vitae, ultricies ege...</p>
-                <a class="text-uppercase" href="#">read more</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="card shadow">
-              <img class="card-img-top" src="/Images/photo-1512917774080-9991f1c4c750.jpg" alt="" style="width: 100%;">
-              <div class="card-body">
-                <a class="text-uppercase text-muted" href="#">travel</a>
-                <h4 class="card-title"><a class="text-dark" href="#">Autumn fashion tips and tricks</a></h4>
-                <p class="text-muted"><i class="far fa-clock"></i> January 16, 2016</p>
-                <p class="text-muted">Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, feugiat
-                  vitae, ultricies ege...</p>
-                <a class="text-uppercase" href="#">read more</a>
-              </div>
-            </div>
+          <div class="col-md-5">
+            <p class="text-muted">Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.</p>
+            <p class="text-muted">Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh.</p>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
