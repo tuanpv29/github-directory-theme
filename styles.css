@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-bar {
+  background-image: url(/Images/photo-1501621965065-c6e1cf6b53e2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.container-getstart {
+  background-image: url(/Images/photo-1497436072909-60f360e1d4b1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
