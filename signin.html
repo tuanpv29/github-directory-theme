@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/82bb699038.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/82bb699038.js" crossorigin="anonymous"></script>
+  <style>
+    .background-side {
+      background-image: url(/Images/photo-1497436072909-60f360e1d4b1.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .container-content {
+      position: relative;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-8 col-lg-6 col-xl-5 d-flex align-items-center">
+        <div class="w-100 py-5 px-4 px-md-5 container-content">
+          <div class="mb-5">
+            <img class="mb-3" src="/Images/logo-square.svg" alt="logo" width="64" height="64">
+            <h1 class="font-weight-bold">Welcome back</h1>
+          </div>
+          <div>
+            <form action="#">
+              <div class="form-group mb-4">
+                <label class="text-uppercase text-muted" for="email">email address</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="name@address.com">
+              </div>
+              <div class="form-group mb-4">
+                <div class="row">
+                  <div class="col-6">
+                    <label class="text-uppercase text-muted" for="email">password</label>
+                  </div>
+                  <div class="col-6 d-flex justify-content-end">
+                    <a href="#">Forgot password?</a>
+                  </div>
+                </div>
+                <input class="form-control" type="password" name="email" id="email" placeholder="Password">
+              </div>
+              <div class="form-group form-check text-muted mb-4">
+                <label class="form-check-label" for="">
+                  <input class="form-check-input" type="checkbox" name="" id="">
+                  Remember me for 30 days</label>
+              </div>
+              <button class="btn btn-primary btn-block btn-lg text-uppercase" type="submit">sign in</button>
+              <hr class="my-4">
+              <button class="btn btn-outline-primary btn-block text-uppercase mb-3" type="">
+                <i class="fab fa-facebook-square"></i> connect with facebook
+              </button>
+              <button class="btn btn-outline-secondary btn-block text-uppercase" type="">
+                <i class="fab fa-google"></i> connect with google
+              </button>
+              <hr class="my-4">
+              <p class="text-center">Don't have an account yet? <a href="#">Sign up</a></p>
+            </form>
+            <a class="close-button mr-5 mt-5" href="index.html"><i class="fas fa-times"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-6 col-xl-7 d-none d-md-block background-side">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
