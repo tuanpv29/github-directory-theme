@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.background-side {
+  background-image: url(/Images/photo-1497436072909-60f360e1d4b1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container-content {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+body {
+  margin-top: 75px;
+}
+
+.icon {
+  font-size: 50px;
+}
+
 .container-bar {
   background-image: url(/Images/photo-1501621965065-c6e1cf6b53e2.jpg);
   background-position: center;
